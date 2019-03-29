@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
+
 
 
 /**
@@ -29,6 +31,7 @@ public class AlibabaNacosDiscoveryServerApplication {
 	@RestController
     static class TestController {
         @GetMapping("/hello")
+        @SentinelResource("hello")
         public String hello(@RequestParam String name) {
             log.info("invoked name = " + name);
             return "hello " + name;
