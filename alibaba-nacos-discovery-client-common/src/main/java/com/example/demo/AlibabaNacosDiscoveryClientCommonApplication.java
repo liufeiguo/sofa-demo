@@ -22,7 +22,7 @@ public class AlibabaNacosDiscoveryClientCommonApplication {
 		SpringApplication.run(AlibabaNacosDiscoveryClientCommonApplication.class, args);
 	}
 	
-	 @RestController
+	    @RestController
 	    static class TestController {
 
 	        @Autowired
