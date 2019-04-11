@@ -33,5 +33,15 @@ public interface PersonRepo {
 
 	List<String> getPersonNamesByLastName(String lastName);
 
+	void create(Person p);
+
+	void delete(Person p);
+
+	void update(Person p);
+
+	void updateDescription(Person p);
+
+	Person findByPrimaryKey(Person person);
+
 }
   

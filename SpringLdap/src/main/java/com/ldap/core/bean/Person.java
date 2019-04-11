@@ -26,11 +26,31 @@ public class Person {
 	
 	private String description;
 	
+	private String country;
+	
+	private String company;
+	
 	private int accountstaty;
 	
 	private int bussinessCategory;
 	
 	
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public String getCompany() {
+		return company;
+	}
+
+	public void setCompany(String company) {
+		this.company = company;
+	}
 
 	public int getAccountstaty() {
 		return accountstaty;

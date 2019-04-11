@@ -77,6 +77,78 @@ public class TestLdap {
 		allPersonNames.forEach(e ->System.out.println(e));
 		//allPersonNames.stream().forEach(System.out::println);
 	}
+	
+	@Test
+	public void test5() {
+		Person person = new Person();
+		person.setFullName("123456");
+		person.setDescription("sssss");
+		person.setCountry("beijing");
+		person.setCompany("infosec");
+		
+		personRepo.create(person);
+	}
+	
+	
+	
+	
+	
+	/** 
+	 * test6:删除节点. <br/> 
+	 * TODO(这里描述这个方法适用条件 – 可选).<br/> 
+	 * TODO(这里描述这个方法的执行流程 – 可选).<br/> 
+	 * TODO(这里描述这个方法的使用方法 – 可选).<br/> 
+	 * TODO(这里描述这个方法的注意事项 – 可选).<br/> 
+	 * 
+	 * @author lgf  
+	 * @since JDK 1.7 
+	 */  
+	@Test
+	public void test6() {
+		Person person = new Person();
+		person.setFullName("123456");
+		person.setDescription("sssss");
+		person.setCountry("beijing");
+		person.setCompany("infosec");
+		
+		personRepo.delete(person);
+	}
+	
+	@Test
+	public void test7() {
+		Person person = new Person();
+		person.setFullName("123456");
+		person.setDescription("sssss");
+		person.setCountry("beijing");
+		person.setCompany("infosec");
+		
+		personRepo.update(person);
+	}
+	
+	@Test
+	public void test8() {
+		Person person = new Person();
+		person.setFullName("123456");
+		person.setDescription("sssss");
+		person.setCountry("beijing");
+		person.setCompany("infosec");
+		
+		personRepo.updateDescription(person);
+	}
+	
+	@Test
+	public void test9() {
+		Person person = new Person();
+		person.setFullName("123456");
+		person.setDescription("sssss");
+		person.setCountry("beijing");
+		person.setCompany("infosec");
+		
+		Person findByPrimaryKey = personRepo.findByPrimaryKey(person);
+		
+		System.out.println(findByPrimaryKey);
+	}
+
 
 }
   

@@ -42,7 +42,7 @@ public class UserTest {
     UserServiceImpl userService;
 
     static String defaultPwd = "111111";
-    static String testUid = StringUtils.leftPad("liu1", 1, "0");
+    static String testUid = StringUtils.leftPad("liu1", 6, "0");
 
     @Test
     public void testACreate() {
@@ -54,7 +54,7 @@ public class UserTest {
         user.setSn(name);
         user.setCn(name);
         user.setMail(name + "@domain.cn");
-        user.setDescription("OU=其他部门,OU=民生电子商务有限责任公司");
+        user.setDescription("OU=其他部门"+","+"OU=民生电子商务有限责任公司");
         boolean res = userService.create(user);
         Assert.assertTrue(res);
     }

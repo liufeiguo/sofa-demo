@@ -40,7 +40,7 @@ public class User extends Object implements Serializable {
 
     @JSONField(name = "userName")
     public String getUid() {
-        return StringUtils.leftPad(uid, 5, "0");
+        return StringUtils.leftPad(uid, 6, "0");
     }
 
     public void setUid(String uid) {
