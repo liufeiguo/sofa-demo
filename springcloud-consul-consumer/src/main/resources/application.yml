@@ -3,7 +3,7 @@ spring:
     name: consul-consumer  #消费者名称
   cloud:
     consul:
-      host: 127.0.0.1    #consul注册节点IP
+      host: 10.20.60.54    #consul注册节点IP
       port: 8500         #consul注册节点端口
       discovery:
         instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}  #实例ID
