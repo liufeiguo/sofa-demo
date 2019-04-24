@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: service-facade
+Implementation-Version: 3.1.3
+Built-By: user
+Implementation-Vendor-Id: com.alipay.sofa
+Build-Jdk: 1.8.0_172
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/sofaboot-dependencies/sofaboot-sample-with-isle/ser
+ vice-facade
+Created-By: Maven Integration for Eclipse
+
